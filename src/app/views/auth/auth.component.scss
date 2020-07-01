@@ -1,0 +1,29 @@
+// import login css
+@import "../../../assets/css/pages/login/login-1.css";
+
+kt-auth, .kt-login {
+	height: 100%;
+
+	.mat-form-field {
+		width: 100%;
+	}
+	.mat-form-field-underline {
+		/** Cambiar color de la linea */
+		background-color: black !important;
+	}
+	  .mat-form-field-ripple {
+		  /** Cambiar color cuando se hace focus*/
+		background-color: #0093DD !important;
+	   }  
+
+	   .mat-form-field input{
+		   color:black;
+		   font-family: Conv_WuerthBold;
+		   font-size: 18px;
+	   }
+	// add extra right padding when displaying spinner in button
+	.kt-spinner {
+		padding-right: 3rem !important;
+	}
+
+}

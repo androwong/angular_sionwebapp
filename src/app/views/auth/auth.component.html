@@ -1,0 +1,43 @@
+<div class="kt-grid kt-grid--hor kt-grid--root kt-login kt-login--v1" id="kt_login">
+	<div
+		class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--desktop kt-grid--ver-desktop kt-grid--hor-tablet-and-mobile">
+		<!--begin::Aside-->
+		<div class="kt-grid__item kt-grid__item--order-tablet-and-mobile-2 kt-grid kt-grid--hor kt-login__aside"
+			style="background-color:#17253d;">
+			<div class="kt-grid__item">
+				<a href="javascript:;" class="kt-login__logo">
+				</a>
+			</div>
+			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver">
+					<img src="./assets/media/logos/cuatro.png" alt="" style="width: 435px; height: 584px; margin-top:100px; margin-left: 40px;">
+			
+				<!--<div class="kt-grid__item kt-grid__item--middle">
+					<h1 style="color: #FFFFFF; font-family:Conv_WuerthExtraBoldCond; font-size: 24px;">BIENVENIDO
+					</h1>
+					<h2 style="color: #FFFFFF; font-family:Conv_WuerthBold; font-size: 14px;"></h2>
+					
+				</div>-->
+			</div>
+			<div class="kt-grid__item">
+				<div class="kt-login__info">
+					<div class="kt-login__copyright">
+						© {{today|date:'yyyy'}} GTM
+					</div>
+					<div class="kt-login__menu">
+						<a href="javascript:;" class="kt-link" style="font-family: arial; font-size: 14px;">Privacidad</a>
+						<a href="javascript:;" class="kt-link" style="font-family: arial; font-size: 14px;">Legal</a>
+						<a href="javascript:;" class="kt-link" style="font-family: arial; font-size: 14px;">Contacto</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--begin::Aside-->
+
+		<!--begin::Content-->
+		<div class="kt-grid__item kt-grid__item--fluid  kt-grid__item--order-tablet-and-mobile-1 kt-login__wrapper"
+			style="background-color:#FFFFFF; background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.9;">
+			<router-outlet></router-outlet>
+		</div>
+		<!--end::Content-->
+	</div>
+</div>

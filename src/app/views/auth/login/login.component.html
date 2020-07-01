@@ -1,0 +1,60 @@
+<!--begin::Body-->
+<div class="kt-login__body">
+	<!--begin::Signin-->
+	<div class="kt-login__form">
+		<div class="kt-login__title">
+			<img src="./assets/media/logos/user-silhouette.png" alt="" style="width:152px; height: 152px;"> 
+		</div>
+
+		<kt-auth-notice></kt-auth-notice>
+
+		<!--begin::Form-->
+		<form class="kt-form" autocomplete="off">
+			<div class="form-group">
+				<mat-form-field>
+					<mat-label style="font-family:Conv_WuerthBold; font-size:24px; color: #17253d">Usuario</mat-label>
+					<input  name="username" matInput type="text" placeholder="Usuario" autocomplete="off" [(ngModel)]="credentials.username"/>
+					<!-- <mat-error *ngIf="isControlHasError('email','required')">
+						<strong>{{ 'AUTH.VALIDATION.REQUIRED_FIELD' | translate }}</strong>
+					</mat-error>
+					<mat-error *ngIf="isControlHasError('email','email')">
+						<strong>{{ 'AUTH.VALIDATION.INVALID_FIELD' | translate }}</strong>
+					</mat-error>
+					<mat-error *ngIf="isControlHasError('email','minLength')">
+						<strong>{{ 'AUTH.VALIDATION.MIN_LENGTH_FIELD' | translate }} 3</strong>
+					</mat-error>
+					<mat-error *ngIf="isControlHasError('email','maxLength')">
+						<strong>{{ 'AUTH.VALIDATION.MAX_LENGTH_FIELD' | translate }} 320</strong>
+					</mat-error> -->
+				</mat-form-field>
+			</div>
+			<div class="form-group">
+				<mat-form-field>
+					<mat-label style="font-family:Conv_WuerthBold; font-size:24px; color: #17253d">Contraseña</mat-label>
+					<input name="contraseña" matInput type="password" placeholder="Contraseña"  autocomplete="off" [(ngModel)]="credentials.password"/>
+					<!-- <mat-error *ngIf="isControlHasError('password','required')">
+						<strong>{{ 'AUTH.VALIDATION.REQUIRED_FIELD' | translate }}</strong>
+					</mat-error>
+					<mat-error *ngIf="isControlHasError('password','minLength')">
+						<strong>{{ 'AUTH.VALIDATION.MIN_LENGTH_FIELD' | translate }} 3</strong>
+					</mat-error>
+					<mat-error *ngIf="isControlHasError('password','maxLength')">
+						<strong>{{ 'AUTH.VALIDATION.MAX_LENGTH_FIELD' | translate }} 100</strong>
+					</mat-error> -->
+				</mat-form-field>
+			</div>
+			<!--begin::Action-->
+			<div class="kt-login__actions">
+				<a href="javascript:;" routerLink="/forgot-password" class="kt-link kt-login__link-forgot" style="font-family:Conv_WuerthBold; font-size: 14px; color:black">
+					{{ 'AUTH.GENERAL.FORGOT_BUTTON' | translate }}
+				</a>
+				<button (click)="submit()" [ngClass]="{'kt-spinner kt-spinner--right kt-spinner--md kt-spinner--light': loading}" id="kt_login_signin_submit" class="btn  btn-info btn-elevate kt-login__btn-primary" style="font-family: Conv_WuerthBold; font-size:18px; color:white; background:#c76722; border:#c76722;">{{ 'AUTH.LOGIN.BUTTON' | translate }}</button>
+			</div>
+			<!--end::Action-->
+		</form>
+		<!--end::Form-->
+
+	</div>
+	<!--end::Signin-->
+</div>
+<!--end::Body-->
